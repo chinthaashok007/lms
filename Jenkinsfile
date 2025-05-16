@@ -10,7 +10,7 @@ pipeline {
         }
         stage('LMS Build') {
             steps {
-               echo 'LMS Build Start'
+               echo 'LMS Build Started'
                sh 'cd webapp && npm install && npm run build'
                echo 'LMS Build Completed'
             }
