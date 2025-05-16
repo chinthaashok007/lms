@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Code Analysis') {
             steps {
-               echo 'Sonar Analysis Started'
+               echo 'Sonar Analysis Start'
                sh 'cd webapp && sudo docker run --rm -e SONAR_HOST_URL="http://3.81.122.225:9000/" -v ".:/usr/src" -e SONAR_TOKEN="sqp_0ecccbc398b22165d361c15a791b2de06166c04d" sonarsource/sonar-scanner-cli -Dsonar.projectKey=lms'
                echo 'Sonar Analysis Completed'
             }
