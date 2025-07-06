@@ -19,7 +19,7 @@ services:
     environment:
       - MODE=local
       - PORT=8080
-      - DATABASE_URL=postgresql://postgres:itjustworks@local-db:5432/mydb
+      
     ports:
       - "8080:8080"
     restart: on-failure
